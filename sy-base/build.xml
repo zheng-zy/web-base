@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="jar" default="main" basedir=".">
+	<target name="main">
+		<jar destfile="hbtradeserver.jar" duplicate="preserve">
+			<zipfileset dir="bin">
+				<include name="**/*.*" />
+			</zipfileset>
+		</jar>
+	</target>
+</project>
